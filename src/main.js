@@ -7,6 +7,7 @@ import { getKarprekar, isKarprekar } from './gng/karprekar.js';
 import { getNarcissistic, isNarcissistic } from './gng/narcissistic.js';
 import { getPalindromic, isPalindromic } from './gng/palindromic.js';
 import { getPerfect, isPerfect } from './gng/perfect.js';
+import { getPowerful, isPowerful } from './gng/powerful.js';
 import { getSmith, isSmith } from './gng/smith.js';
 
 
@@ -60,10 +61,16 @@ export const Smith = {
     get: getSmith,
 };
 
+export const Powerful = {
+    is: isPowerful,
+    get: getPowerful,
+};
+
 export {
     isAbundant, getAbundant, isAutomorphic, getAutomorphic,
     isDeficient, getDeficient, isHappy, getHappy,
     isHarshad, getHarshad, isKarprekar, getKarprekar,
     isNarcissistic, getNarcissistic, isPalindromic, getPalindromic,
     isPerfect, getPerfect, isSmith, getSmith,
+    isPowerful, getPowerful,
 };
